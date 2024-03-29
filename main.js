@@ -37,6 +37,7 @@ images.forEach(imageData); {
     newImage.alt = imageData.alt;
     thumbBar.appendChild(newImage);
 }
+
 // add the constant here
 newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
@@ -54,7 +55,7 @@ thumbBar.addEventListener('click', function(event) {
     }
 // next we need to add elements to the button that the click function occurs on
 /* Wiring up the Darken/Lighten button */ 
-// this event listener will go between dark and light with the light and dark class
+// this event listener will go between dark and light with the overlay element
 btn.addEventListener('click', function() {
     const currentClass = overlay.getAttribute('class');
     if (currentClass === 'dark') {
@@ -64,4 +65,7 @@ btn.addEventListener('click', function() {
         overlay.setAttribute('class', 'dark');
         btn.textContent = 'Darken';
     }
-}
+});
+
+
+//woohoo!

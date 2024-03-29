@@ -20,7 +20,7 @@ const images = [
     { src: 'assets/pic3.jpg', alt: "Image of purple flowers" },
     { src: 'assets/pic4.jpg', alt: "Image of Egyptian Tomb" },
     { src: 'assets/pic5.jpg', alt: "Image of moth" }
-]
+]; 
 /* Looping through images */
 
 const newImage = document.createElement('ThumbarImages');
@@ -38,17 +38,11 @@ images.forEach(imageData); {
     thumbBar.appendChild(newImage);
 }
 
-// add the constant here
-newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
-
 
 // add the click/button event 
-thumbBar.addEventListener('click', function(event) {
+thumbBar.addEventListener('click', function(event)); {
     // this checks if the click occurs, then next check if it's an image element
-    if (event.target.tagName === 'IMG') {
+    if (event.target.tagName === 'img') {
         displayedImage.src = event.target.src;
         displayedImage.alt = event.target.alt;
       }

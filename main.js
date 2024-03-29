@@ -29,6 +29,7 @@ const alts = {
 Adding a for construction is easiest path, if more time you could try a forEach*/
 for (const image of imageNames) {
     const newImage = document.createElement('img');
+    // set the variables with appropriate routes
     newImage.setAttribute('src', 'assets/' + image);
     newImage.setAttribute('alt', alts[image]);
     thumbBar.appendChild(newImage);

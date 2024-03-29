@@ -30,6 +30,13 @@ newImage3.ThumbarImages('assets/pic3.jpg', "Image of purple flowers");
 newImage4.ThumbarImages('assets/pic4.jpg', "Image of Egyptian Tomb");
 newImage5.ThumbarImages('assets/pic5.jpg', "Image of moth");
 
+// make a new loop using the forEach iterative function, calls each array
+images.forEach(imageData); {
+    const newImage = document.createElement('img');
+    newImage.src = imageData.src;
+    newImage.alt = imageData.alt;
+    thumbBar.appendChild(newImage);
+}
 // add the constant here
 newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
@@ -46,6 +53,15 @@ thumbBar.addEventListener('click', function(event) {
       }
     }
 // next we need to add elements to the button that the click function occurs on
-/* Wiring up the Darken/Lighten button */
-
-
+/* Wiring up the Darken/Lighten button */ 
+// this event listener will go between dark and light with the light and dark class
+btn.addEventListener('click', function() {
+    const currentClass = overlay.getAttribute('class');
+    if (currentClass === 'dark') {
+        overlay.setAttribute('class', 'light');
+        btn.textContent = 'Lighten';
+    } else {
+        overlay.setAttribute('class', 'dark');
+        btn.textContent = 'Darken';
+    }
+}

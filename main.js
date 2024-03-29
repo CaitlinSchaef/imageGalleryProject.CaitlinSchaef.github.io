@@ -13,15 +13,25 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
-
-/* Declaring the alternative text for each image file */
-
+/* Declaring the array of image filenames  and alt text */
+const images = [
+    { src: 'assets/pic1.jpg', alt: "Image of eye" },
+    { src: 'assets/pic2.jpg', alt: "Image of marbled rock" },
+    { src: 'assets/pic3.jpg', alt: "Image of purple flowers" },
+    { src: 'assets/pic4.jpg', alt: "Image of Egyptian Tomb" },
+    { src: 'assets/pic5.jpg', alt: "Image of moth" }
+]
 /* Looping through images */
 
-const newImage = document.createElement('img');
+const newImage = document.createElement('ThumbarImages');
+newImage1.ThumbarImages('assets/pic1.jpg', "Image of eye");
+newImage2.ThumbarImages('assets/pic2.jpg', "Image of marbled rock");
+newImage3.ThumbarImages('assets/pic3.jpg', "Image of purple flowers");
+newImage4.ThumbarImages('assets/pic4.jpg', "Image of Egyptian Tomb");
+newImage5.ThumbarImages('assets/pic5.jpg', "Image of moth");
+
+newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
 newImage.setAttribute('alt', xxx);
 thumbBar.appendChild(newImage);
-
 /* Wiring up the Darken/Lighten button */

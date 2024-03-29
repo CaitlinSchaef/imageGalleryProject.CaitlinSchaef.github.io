@@ -46,6 +46,7 @@ for (const image of imageNames) {
         overlay.classList.toggle('dark');
         if (overlay.classList.contains('dark')) {
             btn.textContent = 'Lighten';
+ // i'm not sure if this is changing the pictures or just the button?
         } else {
             btn.textContent = 'Darken';
         }

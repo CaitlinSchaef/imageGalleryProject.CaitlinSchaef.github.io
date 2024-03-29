@@ -30,8 +30,11 @@ newImage3.ThumbarImages('assets/pic3.jpg', "Image of purple flowers");
 newImage4.ThumbarImages('assets/pic4.jpg', "Image of Egyptian Tomb");
 newImage5.ThumbarImages('assets/pic5.jpg', "Image of moth");
 
-
-
+// add the constant here
+newImage = document.createElement('img');
+newImage.setAttribute('src', xxx);
+newImage.setAttribute('alt', xxx);
+thumbBar.appendChild(newImage);
 
 
 // add the click/button event 
@@ -42,11 +45,7 @@ thumbBar.addEventListener('click', function(event) {
         displayedImage.alt = event.target.alt;
       }
     }
-
+// next we need to add elements to the button that the click function occurs on
 /* Wiring up the Darken/Lighten button */
 
-// add the constant down here
-newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+
